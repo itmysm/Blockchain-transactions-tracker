@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   modules: ["@nuxtjs/i18n", "@pinia/nuxt"],
+  css: ["~/assets/styles/main.css"],
   srcDir: "src",
   i18n: {
     locales: [
@@ -11,5 +12,12 @@ export default defineNuxtConfig({
     strategy: "prefix",
     lazy: true,
     customRoutes: "config",
+  },
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
 });
