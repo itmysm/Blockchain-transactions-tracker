@@ -1,5 +1,5 @@
 <template>
-  <p class="text-2xl bg-black">user preference</p>
+  <p class="text-2xl">user preference</p>
 </template>
 
 <script setup>

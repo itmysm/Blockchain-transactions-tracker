@@ -1,5 +1,17 @@
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/i18n", "@pinia/nuxt"],
+  modules: [
+    "@nuxtjs/i18n",
+    "@pinia/nuxt",
+    [
+      "@nuxtjs/google-fonts",
+      {
+        display: "swap",
+        families: {
+          "DM Sans": true,
+        },
+      },
+    ],
+  ],
   css: ["~/assets/styles/main.css"],
   srcDir: "src",
   i18n: {

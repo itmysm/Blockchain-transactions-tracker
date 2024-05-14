@@ -5,8 +5,8 @@ import UserPreference from "@/components/App/UserPreference.vue";
 <template>
   <div>
     <client-only>
-      <div>home page</div>
-      <UserPreference />
+      <div></div>
+      <!-- <UserPreference /> -->
     </client-only>
   </div>
 </template>

@@ -13,24 +13,37 @@ module.exports = {
       colors: {
         primary: {
           DEFAULT: "#000",
+          complement: "#fff",
           "100": "",
           "500": "#000",
           "900": "",
         },
         secondary: {
           DEFAULT: "#d2d2d2",
-          "100": "",
+          "100": "#ccc",
           "500": "#d2d2d2",
           "900": "",
         },
         accent: {
           DEFAULT: "#8e8e8e",
-          "100": "",
+          "100": "#ccc",
           "500": "#8e8e8e",
           "900": "",
         },
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        ourStoryTheme: {
+          primary: "#000",
+          secondary: "#d2d2d2",
+          accent: "#8e8e8e",
+          "base-100": "#ffffff",
+        },
+      },
+    ],
+  },
 };
