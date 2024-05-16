@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .btn {
-  @apply rounded-md !min-h-[1rem] active:outline-none text-base;
+  @apply !min-h-[1rem] active:outline-none text-base !text-md;
 }

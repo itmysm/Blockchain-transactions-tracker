@@ -2,17 +2,18 @@
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "esModuleInterop": true,
     "paths": {
       "@/*": ["src/*"],
       "$/*": ["*"],
       "@/components/*": ["./src/components/*"],
       "@/tailwind/*": ["./src/tailwind/*"],
-      "@/util/*": ["./src/util/*"],
+      "@/utils/*": ["./src/utils/*"],
       "@/lib/*": ["./src/lib/*"],
       "@/assets/*": ["./src/assets/*"],
       "@/styles/*": ["./src/styles/*"],
       "@/constants/*": ["./src/constants/*"],
       "@/shared/*": ["./src/shared/*"]
     }
-  },
+  }
 }

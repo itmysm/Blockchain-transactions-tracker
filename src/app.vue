@@ -1,3 +1,7 @@
+<script setup>
+import "./animate.css"
+</script>
+
 <template>
   <div>
     <NuxtLayout>

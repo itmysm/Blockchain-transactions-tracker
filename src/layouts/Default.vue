@@ -7,6 +7,8 @@ import type TheHeader from '@/components/TheHeader.vue';
 <template>
   <div>
     <TheHeader :visible="false" />
-    <slot />
+    <div class="mt-[68px]">
+      <slot />
+    </div>
   </div>
 </template>
