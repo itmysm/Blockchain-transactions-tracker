@@ -1,13 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/components/**/*.{js,vue,ts}",
-    "./src/layouts/**/*.vue",
-    "./src/pages/**/*.vue",
-    "./src/plugins/**/*.{js,ts}",
-    "./src/app.vue",
-    "./src/error.vue",
-  ],
+  content: ["./src/components/**/*.{js,vue,ts}", "./src/layouts/**/*.vue", "./src/pages/**/*.vue", "./src/plugins/**/*.{js,ts}", "./src/app.vue", "./src/error.vue"],
   theme: {
     extend: {
       colors: {
@@ -30,6 +23,15 @@ module.exports = {
           "500": "#8e8e8e",
           "900": "",
         },
+      },
+
+      screens: {
+        xs: "480px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
       },
     },
   },
