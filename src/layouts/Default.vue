@@ -10,5 +10,6 @@ import type TheHeader from '@/components/TheHeader.vue';
     <div class="mt-[68px]">
       <slot />
     </div>
+    <!-- <TheFooter /> -->
   </div>
 </template>
