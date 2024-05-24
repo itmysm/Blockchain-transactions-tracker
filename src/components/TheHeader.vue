@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full px-5 md:px-10 py-3 md:py-4 fixed top-0">
+  <div class="w-full px-5 md:px-10 py-3 md:py-4 absolute top-0">
     <div class="w-full flex justify-between items-center">
       <a href="/" class="text-xl md:text-2xl lg:text-3xl font-black select-none">OurStory</a>
       <div class="flex gap-x-3">
@@ -7,8 +7,9 @@
           class="btn md:btn-outline btn-md rounded-md btn-primary text-primary-complement px-6 min-h-1 h-11 font-semibold hover:bg-transparent hover:text-black md:hover:!text-white">
           Write Letter
         </button>
-        <button
+        <button @click="aboutModal = true"
           class="btn btn-md hover:bg-white rounded-md btn-primary text-primary-complement px-6 min-h-1 h-11 hover:!text-primary-500 hidden md:flex">About</button>
+        <HomeAbout :is-open="aboutModal" @closeModal="onCloseModal" />
       </div>
     </div>
 
@@ -17,4 +18,8 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
+
+const aboutModal = ref(false);
+const onCloseModal = () => aboutModal.value = false;
 </script>

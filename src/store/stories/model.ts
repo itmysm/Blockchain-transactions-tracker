@@ -1,6 +1,6 @@
 export interface Story {
   Id: string;
-  Title: string;
   Name: string;
-  Description: string;
+  Text: string;
+  Keywords: string[];
 }

@@ -1,15 +1,17 @@
-import axios from "axios";
-import type { HttpClient, createHttpClientProps } from "./model";
+import axios from 'axios';
+import type { HttpClient, createHttpClientProps } from './model';
 
 const headers = {
-  "Content-Type": "application/json",
+  'Content-Type': 'application/json',
 };
 
-export function createHttpClient({ PrefixUrl }: createHttpClientProps): HttpClient {
+export function createHttpClient({
+  PrefixUrl,
+}: createHttpClientProps): HttpClient {
   return {
     post: (endpoint, payload, option) => {
       return axios({
-        method: "post",
+        method: 'post',
         baseURL: option?.directPrefixUrl || PrefixUrl,
         url: endpoint,
         data: payload,
@@ -17,10 +19,10 @@ export function createHttpClient({ PrefixUrl }: createHttpClientProps): HttpClie
     },
     get: (endpoint, option) => {
       return axios({
-        method: "get",
+        method: 'get',
         baseURL: option?.directPrefixUrl || PrefixUrl,
         url: endpoint,
-      });
+      }).then(response => response.data);
     },
   };
 }

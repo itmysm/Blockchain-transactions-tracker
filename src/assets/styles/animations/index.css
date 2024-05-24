@@ -47,6 +47,7 @@
 .animate_fadeInDown {
   animation-name: customizedFadeInDown;
 }
+
 @keyframes customizedFadeInDown {
   from {
     opacity: 0;
@@ -58,5 +59,33 @@
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate_fade_text {
+  animation: 0.4s fade_text linear both;
+}
+
+@keyframes fade_text {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.animate_fadeIn_text {
+  animation: 0.4s fadeIn_text cubic-bezier(0.4, 0, 0.94, 0.03) both;
+}
+
+@keyframes fadeIn_text {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
